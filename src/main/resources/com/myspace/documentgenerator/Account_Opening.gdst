@@ -67,6 +67,7 @@
           <header>Product</header>
           <constraintValueType>1</constraintValueType>
           <factField>product</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -82,6 +83,7 @@
           <header>Sub Product</header>
           <constraintValueType>1</constraintValueType>
           <factField>subProduct</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -97,6 +99,7 @@
           <header>Service</header>
           <constraintValueType>1</constraintValueType>
           <factField>service</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -112,6 +115,7 @@
           <header>Sub Service</header>
           <constraintValueType>1</constraintValueType>
           <factField>subService</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -127,6 +131,7 @@
           <header>Audience</header>
           <constraintValueType>1</constraintValueType>
           <factField>audience</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -142,6 +147,7 @@
           <header>Sub Channel</header>
           <constraintValueType>1</constraintValueType>
           <factField>subChannel</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -157,6 +163,7 @@
           <header>Residency</header>
           <constraintValueType>1</constraintValueType>
           <factField>residency</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -172,6 +179,7 @@
           <header>Domicile</header>
           <constraintValueType>1</constraintValueType>
           <factField>leDomicile</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -187,6 +195,7 @@
           <header>Entity Types</header>
           <constraintValueType>1</constraintValueType>
           <factField>entityTypes</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -202,6 +211,7 @@
           <header>Document Name</header>
           <constraintValueType>1</constraintValueType>
           <factField>documentName</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -217,6 +227,7 @@
           <header>Region</header>
           <constraintValueType>1</constraintValueType>
           <factField>region</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -227,6 +238,7 @@
           <header>Country</header>
           <constraintValueType>1</constraintValueType>
           <factField>country</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -337,34 +349,6 @@
       <type>String</type>
       <update>true</update>
     </set-field-col52>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>docs</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>documentResult docs = new documentResult();
-docs.setDocumentName(crit.getDocumentName());
-docs.setCertification(crit.getDocumentCertification());
-docs.setPolicy(crit.getDocumentPolicy());
-docs.setDescription(crit.getDocumentDesc());
-docs.setInstructions(crit.getInstructions());
-docs.setDocumentCategory(crit.getDocumentGroup());
-docs.setTemplate(crit.getDocumentTemplate());
-insert(docs);
-</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>docs</header>
-          <varName></varName>
-          <fieldType>Boolean</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -392,6 +376,13 @@ insert(docs);
       </acceptedTypes>
     </filter>
     <entries>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.DeleteColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 17:45:29.695 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <columnHeader>docs</columnHeader>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.DeleteColumnAuditLogEntry>
       <org.drools.guvnor.client.modeldriven.dt52.auditlog.InsertRowAuditLogEntry>
         <dateOfEntry>2019-03-14 16:05:58.500 UTC</dateOfEntry>
         <userName>pamAdmin</userName>
@@ -1023,12 +1014,6 @@ insert(docs);
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
     </list>
     <list>
       <value>
@@ -1151,12 +1136,6 @@ insert(docs);
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1283,12 +1262,6 @@ insert(docs);
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
     </list>
     <list>
       <value>
@@ -1411,12 +1384,6 @@ insert(docs);
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1545,12 +1512,6 @@ insert(docs);
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
     </list>
     <list>
       <value>
@@ -1675,12 +1636,6 @@ insert(docs);
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
     </list>
     <list>
       <value>
@@ -1803,12 +1758,6 @@ insert(docs);
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
