@@ -6,12 +6,23 @@ package com.myspace.documentgenerator;
 
 public class test implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public test() {
-    }
+	private java.lang.String test1;
 
+	public test() {
+	}
 
+	public java.lang.String getTest1() {
+		return this.test1;
+	}
 
+	public void setTest1(java.lang.String test1) {
+		this.test1 = test1;
+	}
+
+	public test(java.lang.String test1) {
+		this.test1 = test1;
+	}
 
 }
