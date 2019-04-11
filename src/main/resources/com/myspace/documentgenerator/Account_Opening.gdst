@@ -258,7 +258,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>100</width>
+      <width>286</width>
       <header>Document Description</header>
       <boundName>crit</boundName>
       <factField>documentDesc</factField>
@@ -272,7 +272,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>100</width>
+      <width>241</width>
       <header>Certification</header>
       <boundName>crit</boundName>
       <factField>documentCertification</factField>
@@ -395,6 +395,98 @@
       </acceptedTypes>
     </filter>
     <entries>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 16:19:20.291 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">100</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 16:19:13.90 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Description</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentDesc</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Description</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentDesc</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">100</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 16:19:08.436 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Certification</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentCertification</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Certification</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentCertification</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">100</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 16:19:05.458 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Certification</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentCertification</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Certification</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentCertification</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">100</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
       <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
         <dateOfEntry>2019-04-11 16:15:23.454 UTC</dateOfEntry>
         <userName>rhdmAdmin</userName>
@@ -2185,7 +2277,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>REGULATORY</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
