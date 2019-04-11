@@ -221,34 +221,7 @@ public class criteria implements java.io.Serializable {
 		
 	}
 
-	public criteria(java.lang.String product, java.lang.String subProduct,
-			java.lang.String service, java.lang.String subService,
-			java.lang.String region, java.lang.String country,
-			java.lang.String audience, java.lang.String subChannel,
-			java.lang.String residency, java.lang.String entityTypes,
-			java.lang.String leDomicile, java.lang.String documentName,
-			java.lang.String documentDesc,
-			java.lang.String documentCertification,
-			java.lang.String documentPolicy, java.lang.String instructions,
-			java.lang.String documentTemplate, java.lang.String documentGroup) {
-		this.product = product;
-		this.subProduct = subProduct;
-		this.service = service;
-		this.subService = subService;
-		this.region = region;
-		this.country = country;
-		this.audience = audience;
-		this.subChannel = subChannel;
-		this.residency = residency;
-		this.entityTypes = entityTypes;
-		this.leDomicile = leDomicile;
-		this.documentName = documentName;
-		this.documentDesc = documentDesc;
-		this.documentCertification = documentCertification;
-		this.documentPolicy = documentPolicy;
-		this.instructions = instructions;
-		this.documentTemplate = documentTemplate;
-		this.documentGroup = documentGroup;
+	
 	}
 
 }
