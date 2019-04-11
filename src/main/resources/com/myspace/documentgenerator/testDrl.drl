@@ -16,6 +16,7 @@ rule "Row 1 Account_Opening_Form"
 		modify( crit ) {
 				setDocumentName( "Account Opening Form" )
 		}
+		System.out.println("1 fired");
 end
 
 //from row number: 2
@@ -29,6 +30,7 @@ rule "Row 2 Account_Opening_Form"
 		crit.setDocumentCertification( "ORIGINAL" );
 		crit.setDocumentPolicy( "BANK POLICY" );
 		crit.setDocumentTemplate( "MXCCEC20181018021406_AOF" );
+		System.out.println("2 fired");
 end
 
 //from row number: 3
@@ -42,6 +44,7 @@ rule "Row 3 Account_Opening_Form"
 		crit.setDocumentCertification( "SIMPLE COPY" );
 		crit.setDocumentPolicy( "BANK POLICY" );
 		crit.setDocumentTemplate( "MXCCEC20181221021235_AOF_Ireland" );
+		System.out.println("3 fired");
 end
 
 //from row number: 4
@@ -54,6 +57,7 @@ rule "Row 4 Account_Opening_Form"
 	then
 		crit.setDocumentCertification( "ORIGINAL" );
 		crit.setInstructions( " VAT Number not required for resident entities." );
+		System.out.println("4 fired");
 end
 
 //from row number: 5
@@ -68,5 +72,6 @@ rule "Row 5 Account_Opening_Form"
 	then
 		crit.setDocumentTemplate( "MXCCEC20180216044830_AOF_US_eBAM" );
 		crit.setInstructions( "Please complete and return this form along with the eBAM Account Opening PDF." );
+		System.out.println("5 fired");
 end
 
