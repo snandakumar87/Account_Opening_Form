@@ -46,7 +46,7 @@
       <hideColumn>true</hideColumn>
       <width>130</width>
       <attribute>salience</attribute>
-      <reverseOrder>false</reverseOrder>
+      <reverseOrder>true</reverseOrder>
       <useRowNumber>true</useRowNumber>
     </attribute-column52>
   </attributeCols>
@@ -376,6 +376,25 @@
       </acceptedTypes>
     </filter>
     <entries>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 18:37:10.767 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.AttributeColumnDetails">
+          <attribute>salience</attribute>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.AttributeColumnDetails">
+          <attribute>salience</attribute>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>reverseOrder</fieldName>
+            <oldValue class="boolean">false</oldValue>
+            <newValue class="boolean">true</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
       <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
         <dateOfEntry>2019-04-11 17:53:47.928 UTC</dateOfEntry>
         <userName>rhdmAdmin</userName>
@@ -1013,7 +1032,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">1</valueNumeric>
+        <valueNumeric class="int">6</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1137,7 +1156,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">2</valueNumeric>
+        <valueNumeric class="int">5</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1261,7 +1280,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">3</valueNumeric>
+        <valueNumeric class="int">4</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1385,7 +1404,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">4</valueNumeric>
+        <valueNumeric class="int">3</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1511,7 +1530,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">5</valueNumeric>
+        <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1635,7 +1654,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">6</valueNumeric>
+        <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
