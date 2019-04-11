@@ -49,6 +49,7 @@ rule "Row 3 Account_Opening_Form"
 				setDocumentPolicy( "BANK POLICY" ), 
 				setDocumentTemplate( "MXCCEC20181221021235_AOF_Ireland" )
 		}
+			System.out.println("Rule 3");
 end
 
 //from row number: 4
