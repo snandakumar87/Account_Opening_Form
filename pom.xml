@@ -6,7 +6,7 @@
   <artifactId>DocumentGenerator</artifactId>
   <version>1.0.0</version>
   <packaging>kjar</packaging>
-  <name>DocumentGenerator</name>
+  <name>Account_Opening_Form</name>
   <description></description>
   <dependencies>
     <dependency>
