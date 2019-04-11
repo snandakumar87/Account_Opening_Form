@@ -347,7 +347,7 @@
       <boundName>crit</boundName>
       <factField>documentName</factField>
       <type>String</type>
-      <update>false</update>
+      <update>true</update>
     </set-field-col52>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>true</hideColumn>
@@ -395,6 +395,34 @@
       </acceptedTypes>
     </filter>
     <entries>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 16:15:23.454 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">100</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>update</fieldName>
+            <oldValue class="boolean">false</oldValue>
+            <newValue class="boolean">true</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
       <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
         <dateOfEntry>2019-04-11 16:08:36.457 UTC</dateOfEntry>
         <userName>rhdmAdmin</userName>
