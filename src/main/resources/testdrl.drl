@@ -28,7 +28,7 @@ rule "Row 2 Account_Opening_Form"
 		crit : criteria( subChannel in ( "Non eBAM" ) , documentName == "Account Opening Form" )
 	then
 		modify( crit ) {
-	
+	            setDocumentName( "Account Opening Form" ), 
 				setDocumentCertification( "ORIGINAL" ), 
 				setDocumentPolicy( "BANK POLICY" ), 
 				setDocumentTemplate( "MXCCEC20181018021406_AOF" )
