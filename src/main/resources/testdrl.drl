@@ -1,0 +1,92 @@
+package com.myspace.documentgenerator;
+
+//from row number: 1
+//Baseline
+rule "Row 1 Account_Opening_Form"
+	salience 1
+	dialect "mvel"
+	when
+		crit : criteria( product == "Account Services" , subProduct == "Account Opening" , service == "New Account" , subService == "New Account" , audience in ( "client" ) )
+	then
+		modify( crit ) {
+				setDocumentName( "Account Opening Form" ), 
+				setDocumentDesc( "Request to open an account and acceptance of account terms and conditions." ), 
+				setDocumentCertification( "COMPANY CERTIFIED" ), 
+				setDocumentPolicy( "BANK MANDATE" ), 
+				setInstructions( "Consult last page, as needed, for detailed instructions on each section." ), 
+				setDocumentGroup( "CLIENT TO COMPLETE AND SEND" )
+		}
+end
+
+//from row number: 2
+//Override
+rule "Row 2 Account_Opening_Form"
+	salience 2
+	dialect "mvel"
+	when
+		crit : criteria( subChannel in ( "Non eBAM" ) , documentName == "Account Opening Form" )
+	then
+		modify( crit ) {
+				setDocumentCertification( "ORIGINAL" ), 
+				setDocumentPolicy( "BANK POLICY" ), 
+				setDocumentTemplate( "MXCCEC20181018021406_AOF" )
+		}
+end
+
+//from row number: 3
+//Override
+rule "Row 3 Account_Opening_Form"
+	salience 3
+	dialect "mvel"
+	when
+		crit : criteria( subChannel in ( "Non eBAM" ) , residency in ( "Non-Resident" ) , documentName == "Account Opening Form" , region in ( "Western Europe" ) , country in ( "IRELAND" ) )
+	then
+		modify( crit ) {
+				setDocumentCertification( "SIMPLE COPY" ), 
+				setDocumentPolicy( "BANK POLICY" ), 
+				setDocumentTemplate( "MXCCEC20181221021235_AOF_Ireland" )
+		}
+end
+
+//from row number: 4
+//Override
+rule "Row 4 Account_Opening_Form"
+	salience 4
+	dialect "mvel"
+	when
+		crit : criteria( subChannel in ( "Non eBAM" ) , residency in ( "Resident" ) , entityTypes in ( "Citi Entity", "Club and Societies", "Corporate - Irish Registered Public Listed Company (including known subsidiary)", "Corporate - Non Irish Public Listed Company (including known subsidiary)", "Corporate - Private Company", "Individual", "Institutional (Pension funds/Charity)", "Partnership", "Regulated Banks and Financial Institutions" ) , documentName == "Account Opening Form" , region in ( "Western Europe" ) , country in ( "IRELAND" ) )
+	then
+		modify( crit ) {
+				setDocumentCertification( "ORIGINAL" ), 
+				setInstructions( " VAT Number not required for resident entities." )
+		}
+end
+
+//from row number: 5
+//Override
+rule "Row 5 Account_Opening_Form"
+	date-effective "27-Mar-2019"
+	date-expires "31-Mar-2019"
+	salience 5
+	dialect "mvel"
+	when
+		crit : criteria( subChannel in ( "eBAM Premier", "eBAM Standard" ) , documentName == "Account Opening Form" , region in ( "NA" ) , country in ( "UNITED STATES OF AMERICA" ) )
+	then
+		modify( crit ) {
+				setDocumentTemplate( "MXCCEC20180216044830_AOF_US_eBAM" ), 
+				setInstructions( "Please complete and return this form along with the eBAM Account Opening PDF." )
+		}
+end
+
+//from row number: 6
+rule "Row 6 Account_Opening_Form"
+	salience 6
+	dialect "mvel"
+	when
+		crit : criteria( subChannel in ( "Non eBAM" ) , residency in ( "Resident" ) , documentName == "Account Opening Form" )
+	then
+		modify( crit ) {
+				setDocumentTemplate( "MXCCEC20181018021406_AOF_766" )
+		}
+end
+
