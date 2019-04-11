@@ -3,7 +3,7 @@ package com.myspace.documentgenerator;
 //from row number: 1
 //Baseline
 rule "Row 1 Account_Opening_Form"
-	salience 1
+
 	dialect "mvel"
 	when
 		crit : criteria( product == "Account Services" , subProduct == "Account Opening" , service == "New Account" , subService == "New Account" , audience in ( "client" ) )
@@ -22,7 +22,7 @@ end
 //from row number: 2
 //Override
 rule "Row 2 Account_Opening_Form"
-	salience 2
+
 	dialect "mvel"
 	when
 		crit : criteria( subChannel in ( "Non eBAM" ) , documentName == "Account Opening Form" )
@@ -39,7 +39,7 @@ end
 //from row number: 3
 //Override
 rule "Row 3 Account_Opening_Form"
-	salience 3
+
 	dialect "mvel"
 	when
 		crit : criteria( subChannel in ( "Non eBAM" ) , residency in ( "Non-Resident" ) , documentName == "Account Opening Form" , region in ( "Western Europe" ) , country in ( "IRELAND" ) )
@@ -70,7 +70,7 @@ end
 rule "Row 5 Account_Opening_Form"
 	date-effective "27-Mar-2019"
 	date-expires "31-Mar-2019"
-	salience 5
+
 	dialect "mvel"
 	when
 		crit : criteria( subChannel in ( "eBAM Premier", "eBAM Standard" ) , documentName == "Account Opening Form" , region in ( "NA" ) , country in ( "UNITED STATES OF AMERICA" ) )
@@ -83,7 +83,7 @@ end
 
 //from row number: 6
 rule "Row 6 Account_Opening_Form"
-	salience 6
+
 	dialect "mvel"
 	when
 		crit : criteria( subChannel in ( "Non eBAM" ) , residency in ( "Both" ) , documentName == "Account Opening Form" )
@@ -98,7 +98,7 @@ end
 //from row number: 2
 //Override
 rule "Row 10 Account_Opening_Form"
-	salience 2
+
 	dialect "mvel"
 	when
 		crit : criteria( subChannel in ( "Non eBAM" ) , documentName == "Account Opening Form" )
