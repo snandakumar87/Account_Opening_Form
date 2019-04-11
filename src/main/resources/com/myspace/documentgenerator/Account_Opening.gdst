@@ -258,20 +258,6 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>162</width>
-      <header>Document Name</header>
-      <boundName>crit</boundName>
-      <factField>documentName</factField>
-      <type>String</type>
-      <update>true</update>
-    </set-field-col52>
-    <set-field-col52>
-      <typedDefaultValue>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
-      <hideColumn>false</hideColumn>
       <width>100</width>
       <header>Document Description</header>
       <boundName>crit</boundName>
@@ -349,6 +335,20 @@
       <type>String</type>
       <update>true</update>
     </set-field-col52>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <header>Document Name</header>
+      <boundName>crit</boundName>
+      <factField>documentName</factField>
+      <type>String</type>
+      <update>true</update>
+    </set-field-col52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -376,6 +376,98 @@
       </acceptedTypes>
     </filter>
     <entries>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 15:51:09.578 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">100</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>update</fieldName>
+            <oldValue class="boolean">false</oldValue>
+            <newValue class="boolean">true</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 15:51:03.763 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Description</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentDesc</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Description</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentDesc</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">100</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 15:50:58.666 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Certification</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentCertification</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Certification</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentCertification</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">100</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.InsertColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 15:50:52.69 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </details>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.InsertColumnAuditLogEntry>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.DeleteColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 15:49:53.812 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <columnHeader>Document Name</columnHeader>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.DeleteColumnAuditLogEntry>
       <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
         <dateOfEntry>2019-04-11 15:07:08.815 UTC</dateOfEntry>
         <userName>rhdmAdmin</userName>
@@ -1003,11 +1095,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Account Opening Form</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>Request to open an account and acceptance of account terms and conditions.</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1034,6 +1121,11 @@
       </value>
       <value>
         <valueString>CLIENT TO COMPLETE AND SEND</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1132,11 +1224,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>ORIGINAL</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1148,6 +1235,11 @@
       </value>
       <value>
         <valueString>MXCCEC20181018021406_AOF</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1256,11 +1348,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>SIMPLE COPY</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1272,6 +1359,11 @@
       </value>
       <value>
         <valueString>MXCCEC20181221021235_AOF_Ireland</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1380,11 +1472,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>ORIGINAL</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1401,6 +1488,11 @@
       </value>
       <value>
         <valueString> VAT Number not required for resident entities.</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1516,17 +1608,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>MXCCEC20180216044830_AOF_US_eBAM</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>Please complete and return this form along with the eBAM Account Opening PDF.</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1630,12 +1722,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>ORIGINAL</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>ORIGINAL</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1749,17 +1841,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>description overriden by rule rule_7</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>COMPANY CERTIFIED</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
