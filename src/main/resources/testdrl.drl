@@ -96,20 +96,4 @@ rule "Row 6 Account_Opening_Form"
 			
 end
 
-//from row number: 2
-//Override
-rule "Row 10 Account_Opening_Form"
-
-	dialect "mvel"
-	when
-		crit : criteria( subChannel in ( "Non eBAM" ) , documentName == "Account Opening Form" )
-	then
-		modify( crit ) {
-	            
-				setDocumentCertification( "ORIGINAL" ), 
-				setDocumentPolicy( "BANK POLICY" ), 
-				setDocumentTemplate( "NEW_TEMP" )
-		}
-			System.out.println("Rule 10");
-end
 
