@@ -67,6 +67,7 @@
           <header>Product</header>
           <constraintValueType>1</constraintValueType>
           <factField>product</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -82,6 +83,7 @@
           <header>Sub Product</header>
           <constraintValueType>1</constraintValueType>
           <factField>subProduct</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -97,6 +99,7 @@
           <header>Service</header>
           <constraintValueType>1</constraintValueType>
           <factField>service</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -112,6 +115,7 @@
           <header>Sub Service</header>
           <constraintValueType>1</constraintValueType>
           <factField>subService</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -127,6 +131,7 @@
           <header>Audience</header>
           <constraintValueType>1</constraintValueType>
           <factField>audience</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -142,6 +147,7 @@
           <header>Sub Channel</header>
           <constraintValueType>1</constraintValueType>
           <factField>subChannel</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -157,6 +163,7 @@
           <header>Residency</header>
           <constraintValueType>1</constraintValueType>
           <factField>residency</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -172,6 +179,7 @@
           <header>Domicile</header>
           <constraintValueType>1</constraintValueType>
           <factField>leDomicile</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -187,6 +195,7 @@
           <header>Entity Types</header>
           <constraintValueType>1</constraintValueType>
           <factField>entityTypes</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -202,6 +211,7 @@
           <header>Document Name</header>
           <constraintValueType>1</constraintValueType>
           <factField>documentName</factField>
+          <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -217,6 +227,7 @@
           <header>Region</header>
           <constraintValueType>1</constraintValueType>
           <factField>region</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
@@ -227,6 +238,7 @@
           <header>Country</header>
           <constraintValueType>1</constraintValueType>
           <factField>country</factField>
+          <fieldType>String</fieldType>
           <operator>in</operator>
           <parameters/>
           <binding></binding>
