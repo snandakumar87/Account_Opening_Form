@@ -8,6 +8,7 @@ rule "Row 1 Account_Opening_Form"
 	when
 		crit : criteria( product == "Account Services" , subProduct == "Account Opening" , service == "New Account" , subService == "New Account" , audience in ( "client" ) )
 	then
+	System.out.println("came here");
 		modify( crit ) {
 				setDocumentName( "Account Opening Form" ), 
 				setDocumentDesc( "Request to open an account and acceptance of account terms and conditions." ), 
@@ -91,6 +92,6 @@ rule "Row 6 Account_Opening_Form"
 	
 				setDocumentTemplate( "MXCCEC20181018021406_AOF_766" )
 		}
-			System.out.println("Rule 6");
+			
 end
 
