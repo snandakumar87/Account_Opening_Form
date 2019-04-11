@@ -376,6 +376,29 @@
       </acceptedTypes>
     </filter>
     <entries>
+      <org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
+        <dateOfEntry>2019-04-11 17:45:40.405 UTC</dateOfEntry>
+        <userName>rhdmAdmin</userName>
+        <userComment></userComment>
+        <isDeleted>false</isDeleted>
+        <details class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </details>
+        <originalDetails class="org.drools.guvnor.client.modeldriven.dt52.auditlog.ActionSetFieldColumnDetails">
+          <columnHeader>Document Name</columnHeader>
+          <boundName>crit</boundName>
+          <factField>documentName</factField>
+        </originalDetails>
+        <diffs>
+          <org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+            <fieldName>width</fieldName>
+            <oldValue class="int">162</oldValue>
+            <newValue class="int">-1</newValue>
+          </org.drools.workbench.models.guided.dtable.shared.model.BaseColumnFieldDiffImpl>
+        </diffs>
+      </org.drools.guvnor.client.modeldriven.dt52.auditlog.UpdateColumnAuditLogEntry>
       <org.drools.guvnor.client.modeldriven.dt52.auditlog.DeleteColumnAuditLogEntry>
         <dateOfEntry>2019-04-11 17:45:29.695 UTC</dateOfEntry>
         <userName>rhdmAdmin</userName>
