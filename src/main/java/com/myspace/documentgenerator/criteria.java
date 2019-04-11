@@ -130,7 +130,9 @@ public class criteria implements java.io.Serializable {
 	}
 
 	public void setDocumentName(java.lang.String documentName) {
+	    if(null != documentName) {
 		this.documentName = documentName;
+	    }
 	}
 
 	public java.lang.String getDocumentDesc() {
