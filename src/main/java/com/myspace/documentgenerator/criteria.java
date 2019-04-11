@@ -222,6 +222,6 @@ public class criteria implements java.io.Serializable {
 	}
 
 	
-	}
+	
 
 }
