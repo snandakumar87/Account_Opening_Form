@@ -199,8 +199,7 @@ public class criteria implements java.io.Serializable {
 			java.lang.String documentPolicy,
 			java.lang.String instructions,
 			java.lang.String documentTemplate,
-			java.lang.String documentGroup,
-			java.util.List<com.myspace.documentgenerator.documentResult> documentResultList) {
+			java.lang.String documentGroup) {
 		this.product = product;
 		this.subProduct = subProduct;
 		this.service = service;
@@ -219,7 +218,7 @@ public class criteria implements java.io.Serializable {
 		this.instructions = instructions;
 		this.documentTemplate = documentTemplate;
 		this.documentGroup = documentGroup;
-		this.documentResultList = documentResultList;
+		
 	}
 
 	public criteria(java.lang.String product, java.lang.String subProduct,
