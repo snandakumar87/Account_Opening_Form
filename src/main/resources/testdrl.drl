@@ -86,7 +86,7 @@ rule "Row 6 Account_Opening_Form"
 	salience 6
 	dialect "mvel"
 	when
-		crit : criteria( subChannel in ( "Non eBAM" ) , residency in ( "Resident" ) , documentName == "Account Opening Form" )
+		crit : criteria( subChannel in ( "Non eBAM" ) , residency in ( "Both" ) , documentName == "Account Opening Form" )
 	then
 		modify( crit ) {
 	
